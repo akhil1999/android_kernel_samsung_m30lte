@@ -31,8 +31,8 @@ export ANDROID_MAJOR_VERSION=q
 export arch=arm64
 export CROSS_COMPILE=$(pwd)/../toolchain/4.9/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 make clean && make mrproper 
-make m30lte_00_defconfig
-make -j8
+make m30lte_00_defconfig 
+make -j8 LOCALVERSION="-TurboKernel-M30-v1"
 echo " "
 echo "Making boot image..."
 echo " "
@@ -73,7 +73,7 @@ then
 	echo " "
 	adb devices >/dev/null
 	adb reboot recovery
-	sleep 22s
+	sleep 25s
 	adb push /home/akhilesh/Samsung_Kernel/android_kernel_samsung_m30lte/AIK-Linux/boot_new.img /external_sd/boot.img
 	echo " "
 	echo "using dd method..."
