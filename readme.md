@@ -1,1 +1,1 @@
-android_kernel_samsung_m30lte
+#Kernel Source for the Samsung M30 SM-M305[F]
