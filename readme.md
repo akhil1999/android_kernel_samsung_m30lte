@@ -36,13 +36,15 @@ Get the GCC toolchain 4.9
 
 Then add a build script
 example:
-`export ANDROID_MAJOR_VERSION=q`
-`export ARCH=arm64`
-`export CROSS_COMPILE=path_to_toolchain_executables`
-`make clean && make mrproper`
-`make m30lte_00_defconfig`
-`make j#`
-# = no of CPU threads your CPU has.
+```sh
+export ANDROID_MAJOR_VERSION=q
+export ARCH=arm64
+export CROSS_COMPILE=path_to_toolchain_executables
+make clean && make mrproper
+make m30lte_00_defconfig
+make j#
+```
+'#'=no of CPU threads your CPU has.
 ```sh
 ./build_script_name.sh
 ```
