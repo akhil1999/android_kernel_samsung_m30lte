@@ -29,7 +29,7 @@ echo " "
 echo "Building Kernel..."
 export ANDROID_MAJOR_VERSION=q
 export arch=arm64
-export CROSS_COMPILE=./toolchain/4.9/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+export CROSS_COMPILE=$(pwd)/../toolchain/4.9/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 make clean && make mrproper 
 make m30lte_00_defconfig
 make -j8
