@@ -9,8 +9,8 @@ IMMUTABLE_ENABLE=true
 LP_ENABLE=true
 
 ifneq ($(wildcard $(srctree)/include/crypto/internal/rsa.h),)
-    #$(warning [DEFEX] INTEGRITY_ENABLE)
-    INTEGRITY_ENABLE=false
+    $(warning [DEFEX] INTEGRITY_ENABLE)
+    INTEGRITY_ENABLE=true
 endif
 
 # caches to enable
@@ -111,7 +111,7 @@ ifeq ($(SEC_BUILD_OPTION_VTS), true)
     DEFEX_DEFINES += -DDEFEX_PERMISSIVE_IM
     DEFEX_DEFINES += -DDEFEX_PERMISSIVE_LP
 else
-    #$(warning [DEFEX] VTS false $(SEC_BUILD_OPTION_VTS))
+    $(warning [DEFEX] VTS false $(SEC_BUILD_OPTION_VTS))
 endif
 
 EXTRA_CFLAGS += -I$(srctree)/$(src)/cert
