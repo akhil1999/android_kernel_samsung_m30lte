@@ -775,43 +775,43 @@
 
 			regulators {
 				__ldo1_reg: s2mpb03-ldo1 {
-					regulator-name = "VDDDF_1.05V_CAM";
+					regulator-name = "FCAM_DVDD_1P05";
 					regulator-min-microvolt = <1050000>;
 					regulator-max-microvolt = <1050000>;
 				};
 
 				__ldo2_reg: s2mpb03-ldo2 {
-					regulator-name = "VDDDR1_1.05V_CAM";
+					regulator-name = "RCAM1_DVDD_1P05";
 					regulator-min-microvolt = <1050000>;
 					regulator-max-microvolt = <1050000>;
 				};
 
 				__ldo3_reg: s2mpb03-ldo3 {
-					regulator-name = "VDDIOR1_1.8V_CAM";
+					regulator-name = "CAM_VDDIO_1P8";
 					regulator-min-microvolt = <1800000>;
 					regulator-max-microvolt = <1800000>;
 				};
 
 				__ldo4_reg: s2mpb03-ldo4 {
-					regulator-name = "VDDDR2_1.2V_CAM";
+					regulator-name = "RCAM2_DVDD_1P2";
 					regulator-min-microvolt = <1200000>;
 					regulator-max-microvolt = <1200000>;
 				};
 
 				__ldo5_reg: s2mpb03-ldo5 {
-					regulator-name = "VDDAF_2.8V_CAM";
+					regulator-name = "FCAM_AVDD_2P8";
 					regulator-min-microvolt = <2800000>;
 					regulator-max-microvolt = <2800000>;
 				};
 
 				__ldo6_reg: s2mpb03-ldo6 {
-					regulator-name = "VDDAR1_2.8V_CAM";
+					regulator-name = "RCAM1_AVDD_2P8";
 					regulator-min-microvolt = <2800000>;
 					regulator-max-microvolt = <2800000>;
 				};
 
 				__ldo7_reg: s2mpb03-ldo7 {
-					regulator-name = "VDDAR2_2.8V_CAM";
+					regulator-name = "RCAM2_AVDD_2P8";
 					regulator-min-microvolt = <2800000>;
 					regulator-max-microvolt = <2800000>;
 				};

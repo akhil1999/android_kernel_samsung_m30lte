@@ -31,7 +31,8 @@ export ANDROID_MAJOR_VERSION=q
 export arch=arm64
 export CROSS_COMPILE=$(pwd)/../toolchain/4.9/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 make clean && make mrproper 
-make m30lte_00_defconfig 
+# make m30lte_00_defconfig 
+make m30lte_fimcis2_defconfig
 make -j8 LOCALVERSION="-TurboKernel-M30-v1"
 echo " "
 echo "Making boot image..."
